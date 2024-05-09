@@ -8,6 +8,7 @@ import {
   Slide,
 } from '@mui/material'
 import useScrollTrigger from '@mui/material/useScrollTrigger'
+import Menu from './Menu'
 
 type Props = {
   window?: () => Window
@@ -42,7 +43,9 @@ const NavigationBar: React.FC<Props> = (props: Props) => {
               background:
                 'linear-gradient(90deg, rgba(57,92,130,1) 0%, rgba(15,54,97,1) 100%)',
             }}
-          ></Toolbar>
+          >
+            <Menu />
+          </Toolbar>
         </AppBar>
       </HideOnScroll>
       <Toolbar />
