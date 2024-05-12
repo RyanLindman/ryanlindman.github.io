@@ -26,7 +26,6 @@ function HideOnScroll(props: Props) {
     </Slide>
   )
 }
-
 // TODO: Add burger menu for small screens and standard nav links for bigger screens
 
 const NavigationBar: React.FC<Props> = (props: Props) => {

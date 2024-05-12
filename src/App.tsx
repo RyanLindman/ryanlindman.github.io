@@ -1,11 +1,14 @@
+import { ThemeProvider } from '@emotion/react'
 import './App.css'
-import './index.css'
 import NavigationBar from './components/NavigationBar'
+import { globalTheme } from './components/theme'
 
 function App() {
   return (
     <>
-      <NavigationBar children={undefined} />
+      <ThemeProvider theme={globalTheme}>
+        <NavigationBar children={undefined} />
+      </ThemeProvider>
     </>
   )
 }
