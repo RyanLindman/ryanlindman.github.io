@@ -1,6 +1,7 @@
 import MenuIcon from '@mui/icons-material/Menu'
 import CloseIcon from '@mui/icons-material/Close'
 import {
+  Box,
   Container,
   Drawer,
   IconButton,
@@ -29,6 +30,7 @@ const Menu: React.FC<MenuProps> = ({}) => {
           body1: {
             color: 'white',
             letterSpacing: 1,
+            padding: 10,
           },
         },
       },
@@ -39,7 +41,7 @@ const Menu: React.FC<MenuProps> = ({}) => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            gap: 50,
+            borderBottom: '2px solid #7C279A',
           },
         },
       },
@@ -73,23 +75,24 @@ const Menu: React.FC<MenuProps> = ({}) => {
         </IconButton>
         <Drawer anchor="left" open={drawerOpen} onClose={toggleDrawer(false)}>
           <IconButton onClick={toggleDrawer(false)}>
-            <CloseIcon sx={{ color: 'secondary.light' }} />
+            <CloseIcon fontSize="large" sx={{ color: 'secondary.light' }} />
           </IconButton>
           <List sx={{ width: '100%' }}>
-            <Container>
-              {navOptions.map((o: navOption, idx: number) => (
-                <ListItemButton style={{ padding: 0 }} key={idx}>
+            {navOptions.map((o: navOption, idx: number) => (
+              <ListItemButton style={{ padding: 0 }} key={idx}>
+                <Container>
                   <Link
                     style={{
                       textDecoration: 'none',
                     }}
                     to={o.path || ''}
+                    onClick={toggleDrawer(false)}
                   >
                     <Typography variant="body1">{o.name}</Typography>
                   </Link>
-                </ListItemButton>
-              ))}
-            </Container>
+                </Container>
+              </ListItemButton>
+            ))}
           </List>
         </Drawer>
       </ThemeProvider>
