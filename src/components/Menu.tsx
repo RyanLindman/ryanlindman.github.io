@@ -1,7 +1,8 @@
 import MenuIcon from '@mui/icons-material/Menu'
 import CloseIcon from '@mui/icons-material/Close'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import GitHubIcon from '@mui/icons-material/GitHub'
 import {
-  Box,
   Container,
   Drawer,
   IconButton,
@@ -43,6 +44,13 @@ const Menu: React.FC<MenuProps> = ({}) => {
             alignItems: 'center',
             borderBottom: '2px solid #7C279A',
           },
+          disableGutters: {
+            flexDirection: 'row',
+            justifyContent: 'center',
+            margin: '4px 0px 4px 0px',
+            gap: 30,
+            color: 'white',
+          },
         },
       },
       MuiList: {
@@ -50,7 +58,13 @@ const Menu: React.FC<MenuProps> = ({}) => {
           root: {
             background: '#8F2EB2',
             height: '100%',
+            width: '180px',
           },
+        },
+      },
+      MuiDrawer: {
+        styleOverrides: {
+          root: {},
         },
       },
     },
@@ -75,9 +89,12 @@ const Menu: React.FC<MenuProps> = ({}) => {
         </IconButton>
         <Drawer anchor="left" open={drawerOpen} onClose={toggleDrawer(false)}>
           <IconButton onClick={toggleDrawer(false)}>
-            <CloseIcon fontSize="large" sx={{ color: 'secondary.light' }} />
+            <CloseIcon
+              fontSize="large"
+              sx={{ color: 'secondary.light', margin: 1 }}
+            />
           </IconButton>
-          <List sx={{ width: '100%' }}>
+          <List>
             {navOptions.map((o: navOption, idx: number) => (
               <ListItemButton style={{ padding: 0 }} key={idx}>
                 <Container>
@@ -85,7 +102,7 @@ const Menu: React.FC<MenuProps> = ({}) => {
                     style={{
                       textDecoration: 'none',
                     }}
-                    to={o.path || ''}
+                    to={o.path || '/'}
                     onClick={toggleDrawer(false)}
                   >
                     <Typography variant="body1">{o.name}</Typography>
@@ -93,6 +110,10 @@ const Menu: React.FC<MenuProps> = ({}) => {
                 </Container>
               </ListItemButton>
             ))}
+            <Container disableGutters>
+              <GitHubIcon fontSize="large" />
+              <LinkedInIcon fontSize="large" />
+            </Container>
           </List>
         </Drawer>
       </ThemeProvider>
