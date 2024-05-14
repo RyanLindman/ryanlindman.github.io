@@ -15,13 +15,8 @@ import {
 import { useState } from 'react'
 import { navOption } from './typesInterfaces'
 import { Link } from 'react-router-dom'
+import { navOptions } from './NavigationBar'
 type MenuProps = {}
-
-const navOptions: navOption[] = [
-  { name: 'Home', path: '/' },
-  { name: 'About', path: '/about' },
-  { name: 'Contact', path: '/contact' },
-]
 
 const Menu: React.FC<MenuProps> = ({}) => {
   const theme = createTheme({

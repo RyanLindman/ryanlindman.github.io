@@ -6,11 +6,10 @@ import {
   Typography,
   createTheme,
 } from '@mui/material'
-import './Home.css'
 
-type HomeProps = {}
+type GreetingProps = {}
 
-const Home: React.FC<HomeProps> = ({}) => {
+const Greeting: React.FC<GreetingProps> = ({}) => {
   const theme = createTheme({
     components: {
       MuiTypography: {
@@ -27,7 +26,7 @@ const Home: React.FC<HomeProps> = ({}) => {
             display: 'inline',
             fontWeight: '500',
           },
-          h6: {
+          h5: {
             color: '#ccc',
           },
         },
@@ -64,12 +63,9 @@ const Home: React.FC<HomeProps> = ({}) => {
         <Container disableGutters>
           <Typography variant="h1">Hej Hello Salam.</Typography>
           <Paper elevation={4}>
-            <Box>
-              <Typography variant="h6">
-                My name is Ryan, welcome to my personal web. 👋 <br />
-              </Typography>
-              <Typography></Typography>
-            </Box>
+            <Typography variant="h5">
+              My name is Ryan, welcome to my personal web👋
+            </Typography>
           </Paper>
         </Container>
       </ThemeProvider>
@@ -77,4 +73,4 @@ const Home: React.FC<HomeProps> = ({}) => {
   )
 }
 
-export default Home
+export default Greeting

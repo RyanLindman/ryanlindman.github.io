@@ -9,6 +9,15 @@ import {
 } from '@mui/material'
 import useScrollTrigger from '@mui/material/useScrollTrigger'
 import Menu from './Menu'
+import { navOption } from './typesInterfaces'
+import Links from './Links'
+import Logo from './Logo'
+
+export const navOptions: navOption[] = [
+  { name: 'Home', path: '/' },
+  { name: 'About', path: '/about' },
+  { name: 'Contact', path: '/contact' },
+]
 
 type Props = {
   window?: () => Window
@@ -45,7 +54,12 @@ const NavigationBar: React.FC<Props> = (props: Props) => {
                   'linear-gradient(90deg, rgba(57,92,130,1) 0%, rgba(15,54,97,1) 100%)',
               }}
             >
+              {/* for smaller devices, render menu */}
               <Menu />
+
+              {/* for desktop, render links + logo   */}
+              <Logo />
+              <Links />
             </Toolbar>
           </AppBar>
         </HideOnScroll>
