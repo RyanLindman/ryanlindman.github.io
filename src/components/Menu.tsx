@@ -3,6 +3,7 @@ import CloseIcon from '@mui/icons-material/Close'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import {
+  Box,
   Container,
   Drawer,
   IconButton,
@@ -16,6 +17,7 @@ import { useState } from 'react'
 import { navOption } from './typesInterfaces'
 import { Link } from 'react-router-dom'
 import { navOptions } from './NavigationBar'
+import Logo from './Logo'
 type MenuProps = {}
 
 const Menu: React.FC<MenuProps> = ({}) => {
@@ -100,7 +102,9 @@ const Menu: React.FC<MenuProps> = ({}) => {
                     to={o.path || '/'}
                     onClick={toggleDrawer(false)}
                   >
-                    <Typography variant="body1">{o.name}</Typography>
+                    <Typography variant="body1" fontFamily={'Montserrat'}>
+                      {o.name}
+                    </Typography>
                   </Link>
                 </Container>
               </ListItemButton>
@@ -109,6 +113,7 @@ const Menu: React.FC<MenuProps> = ({}) => {
               <GitHubIcon fontSize="large" />
               <LinkedInIcon fontSize="large" />
             </Container>
+            <Logo size="180px" />
           </List>
         </Drawer>
       </ThemeProvider>

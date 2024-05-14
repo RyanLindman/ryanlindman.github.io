@@ -6,6 +6,8 @@ import {
   Container,
   Box,
   Slide,
+  useMediaQuery,
+  useTheme,
 } from '@mui/material'
 import useScrollTrigger from '@mui/material/useScrollTrigger'
 import Menu from './Menu'
@@ -35,10 +37,13 @@ function HideOnScroll(props: Props) {
     </Slide>
   )
 }
+
 // TODO: Add burger menu for small screens and standard nav links for large screens,
 //       See if margin can be fixed in a better way (35)
 
 const NavigationBar: React.FC<Props> = (props: Props) => {
+  const theme = useTheme()
+  const isSmallScreen = useMediaQuery(theme.breakpoints.up('md'))
   return (
     <React.Fragment>
       <div style={{ marginBottom: 32 }}>
@@ -55,11 +60,16 @@ const NavigationBar: React.FC<Props> = (props: Props) => {
               }}
             >
               {/* for smaller devices, render menu */}
-              <Menu />
+              {!isSmallScreen ? (
+                <Menu />
+              ) : (
+                <>
+                  <Logo size="226px" />
+                  <Links />
+                </>
+              )}
 
               {/* for desktop, render links + logo   */}
-              <Logo />
-              <Links />
             </Toolbar>
           </AppBar>
         </HideOnScroll>

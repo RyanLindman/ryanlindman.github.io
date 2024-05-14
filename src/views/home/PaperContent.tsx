@@ -146,11 +146,15 @@ const PaperContent: React.FC<PaperProps> = () => {
                         justifyContent={'center'}
                         gap={2}
                         mt={2}
+                        sx={{
+                          flexDirection: isSmallScreen ? 'column' : 'row',
+                          alignItems: isSmallScreen ? 'center' : '',
+                        }}
                       >
                         <ImageBox
                           src="\src\assets\kundportal1.png"
                           alt="kundportal"
-                          size="200px"
+                          size={isSmallScreen ? '150px' : '200px'}
                         />
                         <ImageBox
                           src="\src\assets\kundportal2.png"
@@ -197,7 +201,7 @@ const PaperContent: React.FC<PaperProps> = () => {
                             <li>Material UI</li>
                           </ul>
                         </Box>
-                        Complete list of courses can be shown
+                        Complete list of courses can be shared
                       </Typography>
                     </Paper>
                   </Paper>

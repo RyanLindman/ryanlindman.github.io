@@ -8,7 +8,7 @@ const Links = () => {
     <Box>
       <List sx={{ display: 'flex', gap: 4 }}>
         {navOptions.map((o: navOption, idx: number) => (
-          <ListItemButton style={{ padding: 0 }} key={idx}>
+          <ListItemButton key={idx}>
             <Link
               style={{
                 textDecoration: 'none',
