@@ -10,15 +10,15 @@ import Contact from './views/contact/Contact.tsx'
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/ryanlindman.github.io',
     element: <App />,
   },
   {
-    path: '/career',
+    path: '/ryanlindman.github.io/career',
     element: <About />,
   },
   {
-    path: '/contact',
+    path: '/ryanlindman.github.io/contact',
     element: <Contact />,
   },
 ])
