@@ -1,4 +1,3 @@
-import { Label } from '@mui/icons-material'
 import {
   Box,
   Paper,
@@ -9,7 +8,6 @@ import {
   useTheme,
 } from '@mui/material'
 import Card from './Card'
-import ImageBox from '../../components/ImageBox'
 
 const AboutContent = () => {
   const theme = createTheme({

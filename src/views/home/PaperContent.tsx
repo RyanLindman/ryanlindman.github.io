@@ -1,6 +1,5 @@
 import {
   Box,
-  Collapse,
   Container,
   Grid,
   Paper,

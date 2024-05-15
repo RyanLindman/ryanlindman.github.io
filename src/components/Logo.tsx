@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Logo = (props: { size?: string }) => {
   const { size } = props
   return (
