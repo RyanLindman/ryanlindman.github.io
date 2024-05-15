@@ -2,6 +2,7 @@ import { Container } from '@mui/material'
 import PaperContent from './PaperContent'
 import Greeting from '../../components/Greeting'
 import './Home.css'
+import Footer from '../../components/Footer'
 
 type HomeProps = {}
 
@@ -12,13 +13,13 @@ const Home: React.FC<HomeProps> = () => {
         disableGutters
         className="home-container"
         sx={{
-          height: '100vh',
           display: 'flex',
           flexDirection: 'column',
         }}
       >
         <Greeting />
         <PaperContent />
+        <Footer />
       </Container>
     </>
   )

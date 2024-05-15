@@ -1,5 +1,6 @@
 import {
   Box,
+  Collapse,
   Container,
   Grid,
   Paper,
@@ -13,13 +14,13 @@ import SeeMore from '../../components/SeeMore'
 import OpenInNewIcon from '@mui/icons-material/OpenInNew'
 import ImageBox from '../../components/ImageBox'
 import './paper-content.css'
+import Card from '../about/Card'
 
 type PaperProps = {}
 
 const PaperContent: React.FC<PaperProps> = () => {
   const mediaTheme = useTheme()
   const isSmallScreen = useMediaQuery(mediaTheme.breakpoints.down('md'))
-
   const theme = createTheme({
     components: {
       MuiPaper: {
@@ -42,13 +43,20 @@ const PaperContent: React.FC<PaperProps> = () => {
             fontFamily: 'Montserrat',
             color: '#ccc',
           },
+          h3: {
+            fontWeight: 600,
+            backgroundImage: 'var(--gradient-main)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            display: 'inline',
+          },
         },
       },
       MuiGrid: {
         styleOverrides: {
           container: {
             mt: 2,
-            flexDirection: isSmallScreen ? 'row' : 'column',
+            flexDirection: isSmallScreen ? 'column-reverse' : 'row',
           },
         },
       },
@@ -58,19 +66,14 @@ const PaperContent: React.FC<PaperProps> = () => {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <Grid
-          container
-          mt={2}
-          sx={{
-            flexDirection: isSmallScreen ? 'row' : 'column',
-            gap: 4,
-          }}
-        >
+        <Grid container mt={2} spacing={6}>
           <Grid item xs={12} md={8}>
             <Paper elevation={4}>
               <Container disableGutters>
                 <Box>
                   <Paper variant="outlined">
+                    <Typography variant="h3">Projects</Typography>
+
                     <Typography variant="h6">Underground Kitchen</Typography>
                     <Typography variant="subtitle1">
                       Responsive Recipe App where you can browse and find
@@ -89,12 +92,12 @@ const PaperContent: React.FC<PaperProps> = () => {
                   </Paper>
                 </Box>
                 <Box>
-                  <Paper variant="outlined">
+                  <Paper variant="outlined" sx={{ background: '#212121' }}>
                     <Typography variant="h6">S-tier</Typography>
                     <Typography variant="subtitle1">
                       Tierlist App where you can input text and rate the subject
                       in tiers ranging from S-tier to D-tier. My first completed
-                      fullstack school project. Using Java Spring and utilizing
+                      full-stack school project. Using Java Spring and utilizing
                       Java Server Pages or 'JSP', MySQL, JavaScript, HTML, CSS
                     </Typography>
                     <SeeMore
@@ -122,7 +125,7 @@ const PaperContent: React.FC<PaperProps> = () => {
                       href="https://github.com/RyanLindman/aws-cognito-login"
                     />
                   </Paper>
-                  <Paper variant="outlined">
+                  <Paper variant="outlined" sx={{ background: '#212121' }}>
                     <Typography variant="h6">Kundportalen</Typography>
                     <Typography variant="subtitle1">
                       Full-stack web application project during my 6-month
@@ -171,38 +174,105 @@ const PaperContent: React.FC<PaperProps> = () => {
           <Grid item xs={12} md={4}>
             <Paper>
               <Container disableGutters>
-                <Box>
+                <Box display={'flex'}>
                   <Paper elevation={4}>
-                    <Paper variant="outlined">
-                      <Typography variant="h6">Profile</Typography>
+                    <Paper variant="outlined" sx={{ background: '#212121' }}>
+                      <Typography variant="h3">Profile</Typography>
                       <Typography variant="subtitle1">
-                        I am 26 year old student soon completing my studies at
-                        Jensen YH, where I'm studying{' '}
-                        <i>Cloud Developer, AWS</i>. I've got to deploy several
-                        applications to the cloud throughout my time at Jensen,
-                        using services from AWS. But the program is not excluded
-                        to cloud, as the name might suggest.
+                        I am a 26 year old student <strong>soon</strong>{' '}
+                        completing my final term at Jensen YH, where I'm
+                        studying <i>Cloud Developer, AWS</i>.{' '}
+                        <strong>I'm</strong> graduating in the beginning of June
+                        and I'm currently seeking work related to my education.{' '}
                         <br />
                         <br />
-                        Languages and technologies studied:
+                        Languages and technologies used:
                         <Box display="flex">
-                          <ul>
-                            <li>OOP with Java</li>
-                            <li>Spring Boot</li>
-                            <li>SQL</li>
-                            <li>Datamodels</li>
-                            <li>Cloud computing</li>
-                          </ul>
-                          <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JS/TS</li>
-                            <li>React</li>
-                            <li>Material UI</li>
-                          </ul>
+                          <strong>
+                            <ul>
+                              <li>OOP with Java</li>
+                              <li>Spring Boot</li>
+                              <li>SQL</li>
+                              <li>Data models</li>
+                              <li>Cloud computing</li>
+                              <li>Git</li>
+                            </ul>
+                            <ul>
+                              <li>HTML</li>
+                              <li>CSS/SASS</li>
+                              <li>JavaScript/TypeScript</li>
+                              <li>React</li>
+                              <li>Material UI</li>
+                            </ul>
+                          </strong>
+                          <ImageBox
+                            src="\src\assets\dots.png"
+                            size="130px"
+                            rotate="300deg"
+                          />
                         </Box>
-                        Complete list of courses can be shared
                       </Typography>
+                    </Paper>
+                    <Paper variant="outlined">
+                      <Card title="Interests">
+                        <Box
+                          sx={{
+                            background: '#212121',
+                            padding: 2,
+                            borderRadius: 1,
+                            display: 'flex',
+                            flexDirection: isSmallScreen ? 'column' : 'row',
+                            gap: 2,
+                          }}
+                        >
+                          <Box
+                            display={'flex'}
+                            gap={2}
+                            sx={{
+                              flexDirection: isSmallScreen ? 'column' : 'row',
+                              alignItems: isSmallScreen ? 'center' : '',
+                            }}
+                          >
+                            <ImageBox src="\src\assets\are.jpeg" size="300px" />
+                            <ImageBox
+                              src="\src\assets\Image.jpeg"
+                              size="300px"
+                            />
+                          </Box>
+                          <Typography variant="subtitle2">
+                            Skiing is something me and my friends try to do each
+                            year. The images are from our last trip to beloved
+                            Åre, Sweden.
+                          </Typography>
+                        </Box>
+                        <Box display={'flex'} gap={2} mt={5}>
+                          <Box
+                            sx={{
+                              background: '#212121',
+                              padding: 2,
+                              borderRadius: 1,
+                            }}
+                          >
+                            <Box display={'flex'} gap={2}>
+                              <ImageBox
+                                src="\src\assets\Image22.png"
+                                size="300px"
+                              />
+                              <ImageBox
+                                src="\src\assets\Image23.jpg"
+                                size={isSmallScreen ? '100px' : '250px'}
+                              />
+                            </Box>
+                            <Typography variant="subtitle2">
+                              Big fan of art. The painting to the left is Marc
+                              Chagall's <br /> <i>Pietà rossa, 1956.</i>{' '}
+                              <i>Red mercy</i> in English.
+                              <br />
+                              Images from Rome, Italy.
+                            </Typography>
+                          </Box>
+                        </Box>
+                      </Card>
                     </Paper>
                   </Paper>
                 </Box>

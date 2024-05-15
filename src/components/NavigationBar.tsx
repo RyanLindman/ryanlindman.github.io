@@ -17,7 +17,7 @@ import Logo from './Logo'
 
 export const navOptions: navOption[] = [
   { name: 'Home', path: '/' },
-  { name: 'About', path: '/about' },
+  { name: 'Career', path: '/career' },
   { name: 'Contact', path: '/contact' },
 ]
 

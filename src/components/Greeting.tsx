@@ -19,8 +19,7 @@ const Greeting: React.FC<GreetingProps> = ({}) => {
           },
 
           h1: {
-            backgroundImage:
-              'linear-gradient(90deg, rgba(136,36,187,1) 12%, rgba(209,138,185,1) 56%, rgba(161,143,203,1) 85%, rgba(135,194,210,1) 100%)',
+            backgroundImage: 'var(--gradient-main)',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
             display: 'inline',

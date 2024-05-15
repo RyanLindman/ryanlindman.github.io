@@ -1,7 +1,12 @@
 import { Box } from '@mui/material'
 
-const ImageBox = (props: { src?: string; alt?: string; size?: string }) => {
-  const { src, alt, size } = props
+const ImageBox = (props: {
+  src?: string
+  alt?: string
+  size?: string
+  rotate?: string
+}) => {
+  const { src, alt, size, rotate } = props
 
   return (
     <div>
@@ -9,7 +14,8 @@ const ImageBox = (props: { src?: string; alt?: string; size?: string }) => {
         <img
           src={src}
           alt={alt}
-          style={{ height: size, borderRadius: '5px' }}
+          loading="lazy"
+          style={{ height: size, borderRadius: '5px', rotate: rotate }}
         />
       </Box>
     </div>

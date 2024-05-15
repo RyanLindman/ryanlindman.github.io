@@ -1,5 +1,7 @@
 import { createTheme } from '@mui/material'
 
+// changing default MUI palette
+
 export const globalTheme = createTheme({
   palette: {
     primary: {
@@ -11,4 +13,5 @@ export const globalTheme = createTheme({
       light: '#F5EBFF',
     },
   },
+  components: {},
 })

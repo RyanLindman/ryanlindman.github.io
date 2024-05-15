@@ -7,25 +7,27 @@ const SeeMore = (props: {
 }) => {
   const { text, icon, href } = props
   return (
-    <a
-      href={href}
-      rel="noopener noreferrer"
-      style={{ textDecorationLine: 'none' }}
-      target="_blank"
-    >
-      {' '}
-      <br />
-      <Box
-        sx={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: '2px',
-        }}
+    <div style={{ width: 'fit-content' }}>
+      <a
+        href={href}
+        rel="noopener noreferrer"
+        style={{ textDecorationLine: 'none', width: 'fit-content' }}
+        target="_blank"
       >
-        <Typography variant="caption">{text}</Typography>
-        {icon && icon}
-      </Box>
-    </a>
+        {' '}
+        <br />
+        <Box
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '2px',
+          }}
+        >
+          <Typography variant="caption">{text}</Typography>
+          {icon && icon}
+        </Box>
+      </a>
+    </div>
   )
 }
 

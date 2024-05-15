@@ -4,3 +4,13 @@ body {
   min-height: 100vh;
   background-color: #242424 !important;
 }
+
+html {
+  --gradient-main: linear-gradient(
+    90deg,
+    rgba(136, 36, 187, 1) 12%,
+    rgba(209, 138, 185, 1) 56%,
+    rgba(161, 143, 203, 1) 85%,
+    rgba(135, 194, 210, 1) 100%
+  );
+}

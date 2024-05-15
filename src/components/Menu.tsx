@@ -110,10 +110,24 @@ const Menu: React.FC<MenuProps> = ({}) => {
               </ListItemButton>
             ))}
             <Container disableGutters>
-              <GitHubIcon fontSize="large" />
-              <LinkedInIcon fontSize="large" />
+              <a
+                href="https://github.com/RyanLindman"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <GitHubIcon fontSize="large" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ryan-lindman-0bb377276/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <LinkedInIcon fontSize="large" />
+              </a>
             </Container>
-            <Logo size="180px" />
+            <Box mt={20}>
+              <Logo size="180px" />
+            </Box>
           </List>
         </Drawer>
       </ThemeProvider>
