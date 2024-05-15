@@ -214,7 +214,7 @@ const PaperContent: React.FC<PaperProps> = () => {
                       </Typography>
                     </Paper>
                     <Paper variant="outlined">
-                      <Card title="Interests">
+                      <Card title="Interests & Hobbies">
                         <Box
                           sx={{
                             background: '#212121',

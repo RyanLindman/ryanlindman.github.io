@@ -6,6 +6,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from '@mui/material'
 import { globalTheme } from './components/theme.ts'
 import About from './views/about/About.tsx'
+import Contact from './views/contact/Contact.tsx'
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/contact',
-    element: undefined,
+    element: <Contact />,
   },
 ])
 
