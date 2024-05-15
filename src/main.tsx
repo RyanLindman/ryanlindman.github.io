@@ -8,17 +8,19 @@ import { globalTheme } from './components/theme.ts'
 import About from './views/about/About.tsx'
 import Contact from './views/contact/Contact.tsx'
 
+const basePath = '/ryanlindman.github.io'
+
 const router = createBrowserRouter([
   {
-    path: '/ryanlindman.github.io',
+    path: `${basePath}/`,
     element: <App />,
   },
   {
-    path: '/ryanlindman.github.io/career',
+    path: `${basePath}/career`,
     element: <About />,
   },
   {
-    path: '/ryanlindman.github.io/contact',
+    path: `${basePath}/contact`,
     element: <Contact />,
   },
 ])
