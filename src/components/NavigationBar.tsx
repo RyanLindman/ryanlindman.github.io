@@ -38,9 +38,6 @@ function HideOnScroll(props: Props) {
   )
 }
 
-// TODO: Add burger menu for small screens and standard nav links for large screens,
-//       See if margin can be fixed in a better way (35)
-
 const NavigationBar: React.FC<Props> = (props: Props) => {
   const theme = useTheme()
   const isSmallScreen = useMediaQuery(theme.breakpoints.up('md'))
