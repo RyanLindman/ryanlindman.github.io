@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import './index.css'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { RouterProvider, createHashRouter } from 'react-router-dom'
 import { ThemeProvider } from '@mui/material'
 import { globalTheme } from './components/theme.ts'
 import About from './views/about/About.tsx'
@@ -11,7 +11,7 @@ import Home from './views/home/Home.tsx'
 
 export const basePath = '/ryanlindman.github.io'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: `${basePath}/`,
     element: <Home />,
