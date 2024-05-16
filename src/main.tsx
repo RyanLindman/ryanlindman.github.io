@@ -9,19 +9,17 @@ import About from './views/about/About.tsx'
 import Contact from './views/contact/Contact.tsx'
 import Home from './views/home/Home.tsx'
 
-export const basePath = '/ryanlindman.github.io'
-
 const router = createHashRouter([
   {
-    path: `${basePath}/`,
+    path: `/`,
     element: <Home />,
   },
   {
-    path: `${basePath}/contact`,
+    path: `/contact`,
     element: <Contact />,
   },
   {
-    path: `${basePath}/career`,
+    path: `/career`,
     element: <About />,
   },
 ])
