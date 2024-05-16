@@ -16,7 +16,7 @@ import Links from './Links'
 import Logo from './Logo'
 
 export const navOptions: navOption[] = [
-  { name: 'Home', path: '/' },
+  { name: 'Home', path: `/` },
   { name: 'Career', path: '/career' },
   { name: 'Contact', path: '/contact' },
 ]
