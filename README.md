@@ -1,7 +1,7 @@
 # React + TypeScript + Vite
 
-
-preview of home view (WORK IN PROGRESS)
+My fully responsive personal website (WORK IN PROGRESS)
+preview of home view 
 
 
 ![Skärmbild 2024-05-15 224522](https://github.com/RyanLindman/ryanlindman.github.io/assets/117920471/d62c383f-6310-48e3-8965-0f0e31f09560)
