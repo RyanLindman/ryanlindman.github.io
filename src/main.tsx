@@ -9,25 +9,20 @@ import About from './views/about/About.tsx'
 import Contact from './views/contact/Contact.tsx'
 import Home from './views/home/Home.tsx'
 
-const router = createHashRouter(
-  [
-    {
-      path: `/`,
-      element: <Home />,
-    },
-    {
-      path: `/contact`,
-      element: <Contact />,
-    },
-    {
-      path: `/career`,
-      element: <About />,
-    },
-  ],
+const router = createHashRouter([
   {
-    basename: '/ryanlindman.github.io',
-  }
-)
+    path: `/`,
+    element: <Home />,
+  },
+  {
+    path: `/contact`,
+    element: <Contact />,
+  },
+  {
+    path: `/career`,
+    element: <About />,
+  },
+])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
