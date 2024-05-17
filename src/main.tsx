@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import './index.css'
-import { RouterProvider, createHashRouter } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from '@mui/material'
 import { globalTheme } from './components/theme.ts'
 import About from './views/about/About.tsx'
@@ -11,20 +11,25 @@ import Home from './views/home/Home.tsx'
 
 const baseURL = '/ryanlindman.github.io'
 
-const router = createHashRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: `/`,
+      element: <Home />,
+    },
+    {
+      path: `/contact`,
+      element: <Contact />,
+    },
+    {
+      path: `/career`,
+      element: <About />,
+    },
+  ],
   {
-    path: `${baseURL}/`,
-    element: <Home />,
-  },
-  {
-    path: `${baseURL}/contact`,
-    element: <Contact />,
-  },
-  {
-    path: `${baseURL}/career`,
-    element: <About />,
-  },
-])
+    basename: `${baseURL}/`,
+  }
+)
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
