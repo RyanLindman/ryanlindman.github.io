@@ -154,12 +154,12 @@ const PaperContent: React.FC<PaperProps> = () => {
                         }}
                       >
                         <ImageBox
-                          src="\src\assets\kundportal1.png"
+                          src="\public\assets\kundportal1.png"
                           alt="kundportal"
                           size={isSmallScreen ? '150px' : '200px'}
                         />
                         <ImageBox
-                          src="\src\assets\kundportal2.png"
+                          src="\public\assets\kundportal2.png"
                           alt="kundportal"
                           size="200px"
                         />
