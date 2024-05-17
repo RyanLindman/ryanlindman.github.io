@@ -31,6 +31,7 @@ const PaperContent: React.FC<PaperProps> = () => {
           root: {
             background: 'transparent',
           },
+          elevation4: {},
         },
       },
       MuiTypography: {

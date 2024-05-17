@@ -5,6 +5,8 @@ import {
   ThemeProvider,
   Typography,
   createTheme,
+  useMediaQuery,
+  useTheme,
 } from '@mui/material'
 import EmailIcon from '@mui/icons-material/Email'
 import PhoneIcon from '@mui/icons-material/Phone'
@@ -13,6 +15,9 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import NavigationBar from '../../components/NavigationBar'
 
 const Contact = () => {
+  const mediaTheme = useTheme()
+  const isSmallScreen = useMediaQuery(mediaTheme.breakpoints.down('md'))
+
   const theme = createTheme({
     components: {
       MuiTypography: {
@@ -20,6 +25,7 @@ const Contact = () => {
           root: {
             fontFamily: 'Montserrat',
             color: '#ccc',
+            fontSize: isSmallScreen ? '16px' : '',
           },
         },
       },
