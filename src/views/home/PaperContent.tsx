@@ -154,12 +154,12 @@ const PaperContent: React.FC<PaperProps> = () => {
                         }}
                       >
                         <ImageBox
-                          src="\public\assets\kundportal1.png"
+                          src="/assets\kundportal1.png"
                           alt="kundportal"
                           size={isSmallScreen ? '150px' : '200px'}
                         />
                         <ImageBox
-                          src="\public\assets\kundportal2.png"
+                          src="/assets\kundportal2.png"
                           alt="kundportal"
                           size="200px"
                         />
@@ -205,7 +205,7 @@ const PaperContent: React.FC<PaperProps> = () => {
                             </ul>
                           </strong>
                           <ImageBox
-                            src="\src\assets\dots.png"
+                            src="\assets\dots.png"
                             size="130px"
                             rotate="300deg"
                           />
@@ -232,11 +232,8 @@ const PaperContent: React.FC<PaperProps> = () => {
                               alignItems: isSmallScreen ? 'center' : '',
                             }}
                           >
-                            <ImageBox src="\src\assets\are.jpeg" size="300px" />
-                            <ImageBox
-                              src="\src\assets\Image.jpeg"
-                              size="300px"
-                            />
+                            <ImageBox src="\assets\are.jpeg" size="300px" />
+                            <ImageBox src="\assets\Image.jpeg" size="300px" />
                           </Box>
                           <Typography variant="subtitle2">
                             Skiing is something me and my friends try to do each
@@ -254,12 +251,13 @@ const PaperContent: React.FC<PaperProps> = () => {
                           >
                             <Box display={'flex'} gap={2}>
                               <ImageBox
-                                src="\src\assets\Image22.png"
+                                src="\assets\Image22.png"
                                 size="300px"
                               />
                               <ImageBox
-                                src="\src\assets\Image23.jpg"
+                                src="\assets\image23.jpg"
                                 size={isSmallScreen ? '100px' : '250px'}
+                                alt="not"
                               />
                             </Box>
                             <Typography variant="subtitle2">
