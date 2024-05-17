@@ -9,7 +9,7 @@ import About from './views/about/About.tsx'
 import Contact from './views/contact/Contact.tsx'
 import Home from './views/home/Home.tsx'
 
-const baseURL = '/ryanlindman.github.io/#'
+const baseURL = '/ryanlindman.github.io'
 
 const router = createHashRouter([
   {
