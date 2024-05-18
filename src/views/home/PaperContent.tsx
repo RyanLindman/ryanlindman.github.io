@@ -192,11 +192,13 @@ const PaperContent: React.FC<PaperProps> = () => {
                             <li>Material UI</li>
                           </ul>
                         </strong>
-                        <ImageBox
-                          src="\assets\dots.png"
-                          size="130px"
-                          rotate="300deg"
-                        />
+                        {!isSmallScreen ? (
+                          <ImageBox
+                            src="\assets\dots.png"
+                            size="130px"
+                            rotate="300deg"
+                          />
+                        ) : null}
                       </Box>
                     </Typography>
                   </Paper>
