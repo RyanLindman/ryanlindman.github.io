@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { navOptions } from './NavigationBar'
 
 const Breadcrumbs = () => {
@@ -8,15 +9,15 @@ const Breadcrumbs = () => {
           {navOptions.map((breadcrumb, index) => (
             <li key={index} style={{ display: 'inline' }}>
               {breadcrumb.path ? (
-                <a
-                  href={breadcrumb.path}
+                <Link
+                  to={breadcrumb.path}
                   style={{
                     textDecoration: 'underline',
                     color: '#ccc',
                   }}
                 >
                   {breadcrumb.name}
-                </a>
+                </Link>
               ) : (
                 <span>{breadcrumb.name}</span>
               )}
