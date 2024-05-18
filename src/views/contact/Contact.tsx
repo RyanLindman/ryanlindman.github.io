@@ -5,7 +5,6 @@ import {
   ThemeProvider,
   Typography,
   createTheme,
-  isMuiElement,
   useMediaQuery,
   useTheme,
 } from '@mui/material'
