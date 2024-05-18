@@ -12,14 +12,7 @@ const Home: React.FC<HomeProps> = () => {
   return (
     <>
       <NavigationBar children={undefined} />
-      <Container
-        disableGutters
-        className="home-container"
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-        }}
-      >
+      <Container disableGutters className="home-container">
         <Greeting />
         <PaperContent />
         <Footer />
