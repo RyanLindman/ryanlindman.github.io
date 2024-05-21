@@ -84,7 +84,7 @@ const PaperContent: React.FC<PaperProps> = () => {
                 <SeeMore
                   text="See more on GitHub"
                   icon={<OpenInNewIcon fontSize="small" htmlColor="#8F2EB2" />}
-                  href="https://github.com/RyanLindman/TierlisterApp/tree/main"
+                  href="https://github.com/RyanLindman/recipe-app"
                 />
               </Paper>
 
