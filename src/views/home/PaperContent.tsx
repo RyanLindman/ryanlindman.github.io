@@ -81,6 +81,27 @@ const PaperContent: React.FC<PaperProps> = () => {
                   frontend technologies with React for a school project,
                   TypeScript based.
                 </Typography>
+                <Box
+                  display={'flex'}
+                  justifyContent={'center'}
+                  gap={2}
+                  mt={2}
+                  sx={{
+                    flexDirection: isSmallScreen ? 'column' : 'row',
+                    alignItems: isSmallScreen ? 'center' : '',
+                  }}
+                >
+                  <ImageBox
+                    src="\assets\Skarmbild_63.png"
+                    alt="recipe"
+                    size={isSmallScreen ? '120px' : '160px'}
+                  />
+                  <ImageBox
+                    src="\assets\Skarmbild_65.png"
+                    alt="recipe_two"
+                    size={isSmallScreen ? '120px' : '130px'}
+                  />
+                </Box>
                 <SeeMore
                   text="See more on GitHub"
                   icon={<OpenInNewIcon fontSize="small" htmlColor="#8F2EB2" />}
@@ -127,7 +148,7 @@ const PaperContent: React.FC<PaperProps> = () => {
                   environments. Built on React TypeScript, Java Spring REST API,
                   Keycloak, PostgreSQL. My biggest project to date. Here i got
                   my first hands-on experience on a real world code base and
-                  deliver a real world application. Truly thrilling!
+                  deliver a real world application.
                   <br />
                   <i id="ii">
                     <br />
