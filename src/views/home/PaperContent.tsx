@@ -203,7 +203,7 @@ const PaperContent: React.FC<PaperProps> = () => {
                     </Typography>
                   </Paper>
                   <Paper variant="outlined">
-                    <Card title="Interests & Hobbies">
+                    <Card title="What i like to do">
                       <Box
                         sx={{
                           background: '#212121',
@@ -255,9 +255,7 @@ const PaperContent: React.FC<PaperProps> = () => {
                             />
                           </Box>
                           <Typography variant="subtitle2">
-                            Big fan of art. The painting to at the top is Marc
-                            Chagall's <br /> <i>Pietà rossa, 1956.</i>{' '}
-                            <i>Red mercy</i> in English.
+                            Big fan of art.
                             <br />
                             Images from Rome, Italy.
                           </Typography>
