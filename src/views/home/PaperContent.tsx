@@ -208,8 +208,8 @@ const PaperContent: React.FC<PaperProps> = () => {
                     <Typography variant="subtitle1">
                       I am a 26 year old new grad. Just completed my final term
                       at Jensen YH, where I've studied{' '}
-                      <i>Cloud Developer, AWS</i>. <strong>I'm</strong> and I'm
-                      currently seeking work in related fields <br />
+                      <i>Cloud Developer, AWS</i>. And I'm currently seeking
+                      work in related fields <br />
                       <br />
                       Languages and technologies I've worked with:
                       <Box display="flex">
