@@ -221,6 +221,7 @@ const PaperContent: React.FC<PaperProps> = () => {
                             <li>Data models</li>
                             <li>Cloud computing</li>
                             <li>GIT</li>
+                            <li>Automated workflows / CICD</li>
                           </ul>
                           <ul>
                             <li>HTML</li>
