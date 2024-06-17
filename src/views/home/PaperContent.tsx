@@ -115,8 +115,26 @@ const PaperContent: React.FC<PaperProps> = () => {
                   Tierlist App where you can input text and rate the subject in
                   tiers ranging from S-tier to D-tier. My first completed
                   full-stack school project. Using Java Spring and utilizing
-                  Java Server Pages or 'JSP', MySQL, JavaScript, HTML, CSS
+                  Java Server Pages or 'JSP', Docker, MySQL, JavaScript, HTML,
+                  CSS.
                 </Typography>
+                <Box
+                  display={'flex'}
+                  justifyContent={'center'}
+                  gap={2}
+                  mt={2}
+                  sx={{
+                    flexDirection: isSmallScreen ? 'column' : 'row',
+                    alignItems: isSmallScreen ? 'center' : '',
+                  }}
+                >
+                  <ImageBox
+                    src="\assets\stier.png"
+                    alt="s-tier"
+                    size={isSmallScreen ? '120px' : '160px'}
+                  />
+                </Box>
+
                 <SeeMore
                   text="See more on GitHub"
                   icon={<OpenInNewIcon fontSize="small" htmlColor="#8F2EB2" />}
