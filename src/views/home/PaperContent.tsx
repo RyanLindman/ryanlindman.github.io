@@ -202,7 +202,7 @@ const PaperContent: React.FC<PaperProps> = () => {
           <Grid item xs={12} md={4}>
             <Paper>
               <Box display={isSmallScreen ? '' : 'flex'}>
-                <Paper elevation={4}>
+                <Paper elevation={4} sx={{ width: '352px' }}>
                   <Paper variant="outlined" sx={{ background: '#212121' }}>
                     <Typography variant="h3">Profile</Typography>
                     <Typography variant="subtitle1">
@@ -221,7 +221,7 @@ const PaperContent: React.FC<PaperProps> = () => {
                             <li>Data models</li>
                             <li>Cloud computing</li>
                             <li>GIT</li>
-                            <li>Automated workflows / CICD</li>
+                            <li>Automated workflows/ CICD</li>
                           </ul>
                           <ul>
                             <li>HTML</li>
@@ -261,7 +261,7 @@ const PaperContent: React.FC<PaperProps> = () => {
                             alignItems: isSmallScreen ? 'center' : '',
                           }}
                         >
-                          <ImageBox src="\assets\are.jpeg" size="300px" />
+                          {/* <ImageBox src="\assets\are.jpeg" size="300px" /> */}
                           <ImageBox src="\assets\Image.jpeg" size="300px" />
                         </Box>
                         <Typography variant="subtitle2">
@@ -282,14 +282,14 @@ const PaperContent: React.FC<PaperProps> = () => {
                             display={'flex'}
                             gap={2}
                             sx={{
-                              flexDirection: isSmallScreen ? 'column' : 'row',
-                              alignItems: isSmallScreen ? 'center' : '',
+                              flexDirection: 'column',
+                              alignItems: 'center',
                             }}
                           >
                             <ImageBox src="\assets\Image22.png" size="300px" />
                             <ImageBox
                               src="\assets\image23.jpg"
-                              size={isSmallScreen ? '150px' : '250px'}
+                              size={isSmallScreen ? '150px' : '200px'}
                               alt="not"
                             />
                           </Box>
