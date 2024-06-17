@@ -188,13 +188,12 @@ const PaperContent: React.FC<PaperProps> = () => {
                   <Paper variant="outlined" sx={{ background: '#212121' }}>
                     <Typography variant="h3">Profile</Typography>
                     <Typography variant="subtitle1">
-                      I am a 26 year old student <strong>soon</strong>{' '}
-                      completing my final term at Jensen YH, where I'm studying{' '}
-                      <i>Cloud Developer, AWS</i>. <strong>I'm</strong>{' '}
-                      graduating in the beginning of June and I'm currently
-                      seeking work related to my education. <br />
+                      I am a 26 year old graduate <strong>soon</strong> whom
+                      just completed my final term at Jensen YH, where I've
+                      studied <i>Cloud Developer, AWS</i>. <strong>I'm</strong>{' '}
+                      and I'm currently seeking work in related fields <br />
                       <br />
-                      Languages and technologies used:
+                      Languages and technologies I've worked with:
                       <Box display="flex">
                         <strong>
                           <ul>
@@ -203,7 +202,7 @@ const PaperContent: React.FC<PaperProps> = () => {
                             <li>SQL</li>
                             <li>Data models</li>
                             <li>Cloud computing</li>
-                            <li>Git</li>
+                            <li>GIT</li>
                           </ul>
                           <ul>
                             <li>HTML</li>
@@ -276,7 +275,7 @@ const PaperContent: React.FC<PaperProps> = () => {
                             />
                           </Box>
                           <Typography variant="subtitle2">
-                            Big fan of art.
+                            Big fan of art and history.
                             <br />
                             Images from Rome, Italy.
                           </Typography>
