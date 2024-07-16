@@ -56,7 +56,7 @@ const NavigationBar: React.FC<Props> = (props: Props) => {
                   'linear-gradient(90deg, rgba(57,92,130,1) 0%, rgba(15,54,97,1) 100%)',
               }}
             >
-              {/* for smaller devices, render menu */}
+              {/* for smaller devices, render burger menu */}
               {!isSmallScreen ? (
                 <Menu />
               ) : (

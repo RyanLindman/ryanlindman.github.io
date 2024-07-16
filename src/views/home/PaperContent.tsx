@@ -219,9 +219,10 @@ const PaperContent: React.FC<PaperProps> = () => {
                             <li>Spring Boot</li>
                             <li>SQL</li>
                             <li>Data models</li>
-                            <li>Cloud computing</li>
-                            <li>GIT</li>
-                            <li>Automated workflows/ CICD</li>
+                            <li>AWS</li>
+                            <li>Git</li>
+                            <li>CI/CD</li>
+                            <li>Linux</li>
                           </ul>
                           <ul>
                             <li>HTML</li>
