@@ -63,7 +63,15 @@ const Contact = () => {
               >
                 <LinkedInIcon fontSize="large" color="secondary" />
               </a>
-              <Typography variant="h4">Connect with me on LinkedIn</Typography>
+              <a
+                href="https://www.linkedin.com/in/ryan-lindman-0bb377276/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Typography variant="h4">
+                  Connect with me on LinkedIn
+                </Typography>
+              </a>
             </Box>
           </Paper>
         </Container>
