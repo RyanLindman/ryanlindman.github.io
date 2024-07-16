@@ -1,8 +1,12 @@
+import { Link } from 'react-router-dom'
+
 const Logo = (props: { size?: string }) => {
   const { size } = props
   return (
     <div>
-      <img src="\assets\logo2023-3.png" alt="logo" style={{ width: size }} />
+      <Link to={'/'}>
+        <img src="\assets\logo2023-3.png" alt="logo" style={{ width: size }} />
+      </Link>
     </div>
   )
 }
