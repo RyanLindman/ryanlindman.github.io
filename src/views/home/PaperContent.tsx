@@ -78,8 +78,8 @@ const PaperContent: React.FC<PaperProps> = () => {
                   Responsive Recipe App where you can browse and find diffirent
                   recipes for modern dishes. Giving the user step by step
                   instructions. This was my first time diving into modern
-                  frontend technologies with React for a school project,
-                  TypeScript based.
+                  frontend technologies for a school project,
+                  React TypeScript based UI.
                 </Typography>
                 <Box
                   display={'flex'}
@@ -159,19 +159,19 @@ const PaperContent: React.FC<PaperProps> = () => {
               <Paper variant="outlined" sx={{ background: '#212121' }}>
                 <Typography variant="h6">Kundportalen</Typography>
                 <Typography variant="subtitle1">
-                  Full-stack web application project during my 6-month
-                  internship at DirSys. It's an internal tool that gathers
-                  information about each customer and their product enviroments
-                  in a table. It also allows CRUD operations for these
+                  Full-stack web application project during my 
+                  time at DirSys. It's an internal tool that gathers
+                  data about each customer and their product enviroments
+                  in a clear and easy accessible way. It also allows CRUD operations for these
                   environments. Built on React TypeScript, Java Spring REST API,
                   Keycloak, PostgreSQL. My biggest project to date. Here i got
-                  my first hands-on experience on a real world code base and
+                  my first hands-on experience on a real world code base and to
                   deliver a real world application.
                   <br />
                   <i id="ii">
                     <br />
-                    <span style={{ color: '#8F2EB2' }}>Unfortunetly</span> i
-                    can't share the source code, but i'll gladly talk and answer
+                    <span style={{ color: '#8F2EB2' }}>Unfortunetly</span> I
+                    can't share the source code for obvious reasons, but i'll gladly talk and answer
                     questions about it.
                   </i>
                   <Box
@@ -206,30 +206,32 @@ const PaperContent: React.FC<PaperProps> = () => {
                   <Paper variant="outlined" sx={{ background: '#212121' }}>
                     <Typography variant="h3">Profile</Typography>
                     <Typography variant="subtitle1">
-                      I am a 26 year old new grad. Just completed my final term
-                      at Jensen YH, where I've studied{' '}
-                      <i>Cloud Developer, AWS</i>. And I'm currently seeking
-                      work in related fields <br />
+                      I'm a 27 year old entry level full-stack developer 
+                      whos currently seeking
+                      work in related fields. <br />
                       <br />
-                      Languages and technologies I've worked with:
+                      Languages and technologies I've worked with both professionally and educationally:
                       <Box display="flex">
                         <strong>
                           <ul>
-                            <li>OOP with Java</li>
+                            <li>Java</li>
                             <li>Spring Boot</li>
                             <li>SQL</li>
+                            <li>HTML</li>
+                            <li>CSS/SASS</li>
+                            <li>JavaScript/TypeScript</li>
+                            <li>React</li>                          
+                          </ul>
+                          <ul>                         
                             <li>Data models</li>
                             <li>AWS</li>
                             <li>Git</li>
                             <li>CI/CD</li>
                             <li>Linux</li>
-                          </ul>
-                          <ul>
-                            <li>HTML</li>
-                            <li>CSS/SASS</li>
-                            <li>JavaScript/TypeScript</li>
-                            <li>React</li>
+                            <li>Docker</li>
                             <li>Material UI</li>
+                            <li>Figma</li>
+                            <li>Office 365</li>
                           </ul>
                         </strong>
                         {!isSmallScreen ? (

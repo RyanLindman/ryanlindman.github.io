@@ -5,7 +5,17 @@ import GitHubIcon from '@mui/icons-material/GitHub'
 
 import Breadcrumbs from './Breadcrumbs'
 
-const Footer = () => {
+interface Links {
+  icon: React.ReactNode
+  href: string
+}
+
+interface FooterProps {
+  links?: Links[]
+  children?: React.ReactNode
+}
+
+const Footer: React.FC<FooterProps> = ({links = [], children}) => {
   return (
     <Grid container pl={2} pr={2}>
       <Box
@@ -23,25 +33,17 @@ const Footer = () => {
           mt: 15,
         }}
       >
+
         <Box>
-          <Breadcrumbs />
+          {children}
         </Box>
-        <Box sx={{ display: 'flex', gap: '15px' }}>
-          <a
-            href="https://www.linkedin.com/in/ryan-lindman-0bb377276/"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <LinkedInIcon fontSize="large" />
-          </a>
-          <a
-            href="https://github.com/RyanLindman"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <GitHubIcon fontSize="large" />
-          </a>
-        </Box>
+        <Box >
+          {links.map((link, idx) => (
+            <a key={idx} href={link.href} rel='noopener noreferrer' target='_blank'>
+              {link.icon}
+            </a>
+          ))}
+        </Box>    
       </Box>
     </Grid>
   )

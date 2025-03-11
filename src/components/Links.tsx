@@ -12,7 +12,9 @@ const Links = () => {
             <Link
               style={{
                 textDecoration: 'none',
+                
               }}
+              onClick={() => window.scrollTo(0, 0)}
               to={o.path || '/'}
             >
               <Typography

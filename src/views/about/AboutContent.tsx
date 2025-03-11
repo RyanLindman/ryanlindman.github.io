@@ -63,16 +63,16 @@ const AboutContent = () => {
               caption="September 2023 - May 2024"
             >
               <Typography>
-                During my studies at Jensen i worked hours at DirSys and i also
-                did my 6-month internship. Here i worked on a full-stack project
-                from scratch.
+                During my studies at Jensen I worked hours at DirSys and I also
+                did my 6-month internship. Here I co-lead the frontend development of an inhouse full-stack project.
+                The project was a tool for the company to create environments for every new costumer and have clear data of what each costumer owned. 
               </Typography>
             </Card>
           </Paper>
           <Paper variant="outlined" sx={{ background: '#272727' }}>
             <Card
               undertitle="Substitute Teacher at Humly AB"
-              caption="April 2022 - present"
+              caption="April 2022 - June 2024"
             >
               <Typography>
                 Worked as assisting and substitute teacher at Hovåsskolan for
@@ -83,11 +83,12 @@ const AboutContent = () => {
           <Paper variant="outlined">
             <Card
               undertitle="Operator & safety delegate at Volvo Cars Torslanda "
-              caption="September 09 2017 - study leave"
+              caption="September 09 2017 - present"
             >
               <Typography>
                 My first job after high school, here i worked for the Paint
                 Shop. Elected as safety delegate during my first year.
+                <br />Later I took responsibility for following up our uptime and downtime, visualizing our delivery data through AXXOS, PowerBI and Excel to help our team to understand our weekly deliverance.
               </Typography>
             </Card>
           </Paper>
@@ -101,7 +102,7 @@ const AboutContent = () => {
             >
               <Typography>
                 2-year program in software development, with focus on cloud
-                technologies
+                technologies and backend development. 400YH.
               </Typography>
             </Card>
           </Paper>
@@ -110,7 +111,7 @@ const AboutContent = () => {
               undertitle="Skriva, grundkurs - Göteborgs Universitet"
               caption="Januari 2022 - June 2022"
             >
-              <Typography>30HP course in writing</Typography>
+              <Typography>Course in writing. 30HP.</Typography>
             </Card>
           </Paper>
           <Paper variant="outlined" sx={{ background: '#272727' }}>
@@ -118,7 +119,7 @@ const AboutContent = () => {
               undertitle="Retorik, grundkurs - Göteborgs Universitet"
               caption="September 2021 - Januari 2022"
             >
-              <Typography>30HP course in rhetoric</Typography>
+              <Typography>Course in rhetoric. 30HP.</Typography>
             </Card>
           </Paper>
           <Paper variant="outlined">
@@ -126,7 +127,7 @@ const AboutContent = () => {
               undertitle="Juridisk Introduktionskurs - Lunds Universitet"
               caption="September 2021 - Januari 2022"
             >
-              <Typography>15HP intro course for law school</Typography>
+              <Typography>Intro course for law school. 15HP.</Typography>
             </Card>
           </Paper>
         </Box>
