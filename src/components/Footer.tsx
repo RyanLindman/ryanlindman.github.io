@@ -1,9 +1,6 @@
 import { Box, Grid } from '@mui/material'
 
-import LinkedInIcon from '@mui/icons-material/LinkedIn'
-import GitHubIcon from '@mui/icons-material/GitHub'
 
-import Breadcrumbs from './Breadcrumbs'
 
 interface Links {
   icon: React.ReactNode
