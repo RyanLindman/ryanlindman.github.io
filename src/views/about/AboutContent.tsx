@@ -8,6 +8,7 @@ import {
   useTheme,
 } from '@mui/material'
 import Card from './Card'
+import './about-content.css'
 
 const AboutContent = () => {
   const theme = createTheme({
@@ -49,7 +50,7 @@ const AboutContent = () => {
       <Box
         sx={{
           display: 'flex',
-          justifyContent: 'space-around',
+          
           mt: 15,
           gap: 10,
           flexDirection: isSmallScreen ? 'column' : 'row',
@@ -99,18 +100,23 @@ const AboutContent = () => {
               title="Education"
               undertitle="Cloudutvecklare, AWS - Jensen Yrkeshögskola"
               caption="September 2022 - June 2024"
+              img={{src: "public/assets/Goteborgs_universitet_seal.svg.png", imgStyle: {width: 20}}}
+              
             >
               <Typography>
                 2-year program in software development, with focus on cloud
                 technologies and backend development. 400YH.
               </Typography>
+              
             </Card>
           </Paper>
           <Paper variant="outlined">
             <Card
               undertitle="Skriva, grundkurs - Göteborgs Universitet"
               caption="Januari 2022 - June 2022"
+              
             >
+              
               <Typography>Course in writing. 30HP.</Typography>
             </Card>
           </Paper>

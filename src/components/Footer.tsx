@@ -30,13 +30,13 @@ const Footer: React.FC<FooterProps> = ({links = [], children}) => {
           mt: 15,
         }}
       >
-
+       
         <Box>
           {children}
         </Box>
-        <Box >
+        <Box>
           {links.map((link, idx) => (
-            <a key={idx} href={link.href} rel='noopener noreferrer' target='_blank'>
+            <a key={idx} href={link.href} rel='noopener noreferrer' target='_blank' style={{margin: 8}}>
               {link.icon}
             </a>
           ))}

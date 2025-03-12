@@ -9,12 +9,10 @@ import GitHubIcon from '@mui/icons-material/GitHub'
 import '../../App.css'
 import Breadcrumbs from '../../components/Breadcrumbs'
 
-
 const socialLinks = [
   {href: "https://www.linkedin.com/in/ryan-lindman-0bb377276/", icon: <LinkedInIcon fontSize='large' /> },
   {href: "https://github.com/RyanLindman", icon: <GitHubIcon fontSize='large' />  }
 ]
-
 
 const Home: React.FC = () => {
   return (
